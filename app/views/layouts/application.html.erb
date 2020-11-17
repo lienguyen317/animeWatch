@@ -4,9 +4,11 @@
     <title>AnimeWatch</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    # script tag below was coppied from app/javascript/application.js ---> this was created when I create the new rails app with web packer and specified it to react as a frontend option
+    <%= javascript_pack_tag 'hello_react' %>
   </head>
 
   <body>

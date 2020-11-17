@@ -1,7 +1,8 @@
 module Api
     module V1
         class AnimesController < ApplicationController
-            
+            # fixed post route issues 
+            protect_from_forgery with: :null_session
             
             def index
                 animes = Anime.all 
@@ -16,7 +17,7 @@ module Api
             end
 
             def create
-                anime =Anime.new(anime_params)
+                anime = Anime.new(anime_params)
 
                 if anime.save
                     render json: AnimeSerializer.new(anime).serialized_json
