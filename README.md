@@ -19,11 +19,11 @@ Using Ruby on rails. With 2 models: anime and review. Set up relationhip for the
 
 Using Webpacker-React to build out front-end components of the app. Setup front-end at the sametime as ruby on rails. 
 
-[Front-end React components]()
+[Front-end React components](https://docs.google.com/drawings/d/1g5MycW-da1UwAeZUuobdrVT635bCnSMDW3jJOT8H5ZY/edit?usp=sharing)
 
-[Desktop Wireframe]()
+[Desktop Wireframe](https://docs.google.com/drawings/d/1zBWD3091EiPeuK1xYwIuiDv6vXzZxcJsXZ04RFSro7I/edit?usp=sharing)
 
-[Mobile wireframe]() 
+[Mobile wireframe](https://docs.google.com/drawings/d/1sCUhKsTYtLXRfCV0GP1JAngvN7epWOepfY6i4qmRmhA/edit?usp=sharing) 
 
 ## MVP/PostMVP
 ___
