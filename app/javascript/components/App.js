@@ -8,7 +8,6 @@ const App = () => {
         <Switch>
             <Route exact path = '/' component = {Animes}/>
             <Route exact path = '/animes/:slug' component = {Anime}/>
-
         </Switch>
     )
 }
