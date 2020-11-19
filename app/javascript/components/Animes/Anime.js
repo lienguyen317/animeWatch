@@ -3,11 +3,16 @@ import { BrowserRouter as Router, Link} from 'react-router-dom'
 import styled from 'styled-components'
 
 const Card = styled.div`
-    border: 1px solid #effefef; 
+    border: 1px solid #efefef; 
     background: #fff;
+    text-align: center;
 `
 const AnimeThumbNail =  styled.div`
     width: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
 
     img {
         height: 50px;
@@ -43,7 +48,7 @@ const Anime = (props) => {
             <AnimeName>{props.attributes.name}</AnimeName>
             <div className = 'anime-score'>{props.attributes.avg_score}</div>
             <LinkWrapper>
-                <Link href={`/animes/${props.attributes}`}>View Anime</Link>
+                <Link to={`/animes/${props.attributes.slug}`}>View Anime</Link>
             </LinkWrapper>
         </Card>
     )

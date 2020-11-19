@@ -1,8 +1,24 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 
-const Anime = () => {
+const Anime = (props) => {
+    const [anime, setAnime] = useState({})
+    const [review, setReview] = useState({})
+
+    useEffect(()=>{
+        const slug = props.match.params.slug
+        const url = `/api/v1/animes/${slug}`
+        
+        axios.get(url)
+        .then( resp => setAnime(resp.data))
+        .catch( resp => console.log(resp))
+    },[])
+
+
+
+
     return(
-        <div>This is the Anime show view for the app</div>
+        <div></div>
     )
 }
 

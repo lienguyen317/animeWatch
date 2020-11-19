@@ -37,9 +37,7 @@ const Animes = () => {
         // Get all animes from api
         // Update animes in our state
         axios.get('/api/v1/animes.json')
-        .then( resp => {
-            setAnimes(resp.data.data)
-        })
+        .then( resp => setAnimes(resp.data.data))
         .catch( resp => console.log(resp))
     }, [animes.length])
 
