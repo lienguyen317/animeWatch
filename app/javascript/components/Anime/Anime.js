@@ -61,9 +61,13 @@ const Anime = (props) => {
             setAnime({...anime, included})
             setReview({title: '', description: '', score: 0})
         })
-        .catch(resp =>{
+        .catch(resp => {})
+    }
 
-        })
+    const setRating = (score, e) => {
+        e.preventDefault()
+
+        setReview({...review, score})
     }
 
 
@@ -85,6 +89,7 @@ const Anime = (props) => {
                         <ReviewForm
                             handleChange={handleChange}
                             handleSubmit={handleSubmit}
+                            setRating={setRating}
                             attributes={anime.data.attributes}
                             review={review}
                         />
