@@ -41,7 +41,30 @@ const Anime = (props) => {
         .catch( resp => console.log(resp))
     },[])
 
+    const handleChange = (e) => {
+        e.preventDefault()
 
+        setReview(Object.assign({}, review, {[e.target.name]: e.target.value}))
+        console.log('review ', review)
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+
+        const csrfToken = document.querySelector('[name=csrf-token]').content
+        axios.defaults.headers.common['X-CSRF-TOKEN'] = csrfToken
+
+        const anime_id = anime.data.id 
+        axios.post('/api/v1/reviews', {review, anime_id})
+        .then(resp =>{
+            const included = [...anime.included, resp.data]
+            setAnime({...anime, included})
+            setReview({title: '', description: '', score: 0})
+        })
+        .catch(resp =>{
+
+        })
+    }
 
 
     return(
@@ -59,7 +82,12 @@ const Anime = (props) => {
                         </Main>     
                     </Column>
                     <Column>
-                        <ReviewForm/>
+                        <ReviewForm
+                            handleChange={handleChange}
+                            handleSubmit={handleSubmit}
+                            attributes={anime.data.attributes}
+                            review={review}
+                        />
                     </Column>
                 </Fragment>
             }
