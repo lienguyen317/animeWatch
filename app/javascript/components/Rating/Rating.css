@@ -1,0 +1,20 @@
+.star-wrapper {
+    position: relative;
+    display: inline-block;
+}
+.stars {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    color: yellow;
+}
+
+/* yarn add fontawesome before using this */
+.star-wrapper::before, .stars::before {
+    font-family: 'Font Awesome Free';
+    font-style: "regular";
+    font-weight: normal;
+    content: "\f005 \0020 \f005 \0020 \f005 \0020 \f005 \0020 \f005";
+} 

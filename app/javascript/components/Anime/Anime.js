@@ -2,6 +2,7 @@ import React, { useState, useEffect, Fragment } from 'react'
 import axios from 'axios'
 import Header from './Header'
 import ReviewForm from './ReviewForm'
+import Review from './Review'
 import styled from 'styled-components'
 
 const Wrapper = styled.div`
@@ -54,21 +55,36 @@ const Anime = (props) => {
         const csrfToken = document.querySelector('[name=csrf-token]').content
         axios.defaults.headers.common['X-CSRF-TOKEN'] = csrfToken
 
+        // Get anime id
         const anime_id = anime.data.id 
         axios.post('/api/v1/reviews', {review, anime_id})
         .then(resp =>{
-            const included = [...anime.included, resp.data]
+            const included = [...anime.included, resp.data.data]
             setAnime({...anime, included})
             setReview({title: '', description: '', score: 0})
         })
         .catch(resp => {})
     }
 
+    // set score
     const setRating = (score, e) => {
         e.preventDefault()
-
         setReview({...review, score})
     }
+
+    // mapping over anime then passing down attributes to reviews
+    let reviews
+    if (loaded && anime.included){
+        reviews = anime.included.map((item, index) => {
+            return(
+                <Review
+                    key={index}
+                    attributes={item.attributes}
+                />
+            )
+        })
+    }
+    
 
 
     return(
@@ -82,7 +98,7 @@ const Anime = (props) => {
                                 attributes={anime.data.attributes}
                                 reviews={anime.included}
                             />
-                            <div className='reviews'></div>
+                            {reviews}
                         </Main>     
                     </Column>
                     <Column>
