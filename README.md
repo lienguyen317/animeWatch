@@ -1,7 +1,7 @@
 # Capstone project: AnimeWatch
 ___
 
-AnimeWatch is an animes review app that users can leave their reviews or delete them. This app will help other users see the rating of the anime and read other users' reviews to help deciding on what anime to add to their future watch list.
+AnimeWatch is an animes review app that users can leave their reviews and ratings for a specific anime. This app will help other users see the rating of the anime and read other users' reviews to help deciding on what anime to add to their future watch list.
 
 ## Motivation 
 ___
@@ -10,6 +10,13 @@ As a anime fan, I often feel overwhelmed with the amount of animes out there. I 
 
 ## Tech & FrameWork 
 ___
+
++ Ruby on rails with react webpacker
++ React styled-component
++ Font Awesome
++ Google font
+
+
 
 ### Back-end
 
@@ -65,8 +72,8 @@ ___
 | Individual anime page component | H | 3hr | |
 | Review component | H | 2hr | |
 | Review Form | H | 3hr | |
-| Desktop View CSS | M | 4hr |  |
-| Mobile View CSS | M | 3hr |  |
+| CSS | M | 4hr |  |
+| Font-Awsome Icon | M | 1hr |  |
 | Testing and bug fix | M | 5hr | | 
 | Total hours |  | 30hr | |
 
@@ -77,6 +84,7 @@ ___
 | Motion Framer | L | 4hr | |
 | Animation | L | 3hr | |
 | 3rd model for backend | L | 2hr | |
+| Responsive CSS | M | 3hr |  |
 
 
 
