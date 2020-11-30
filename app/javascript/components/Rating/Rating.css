@@ -13,7 +13,7 @@
 
 /* yarn add fontawesome before using this */
 .star-wrapper::before, .stars::before {
-    font-family: 'Font Awesome Free';
+    font-family: 'Font Awesome\ 5 Free';
     font-style: "regular";
     font-weight: normal;
     content: "\f005 \0020 \f005 \0020 \f005 \0020 \f005 \0020 \f005";

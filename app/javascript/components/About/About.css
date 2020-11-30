@@ -1,0 +1,23 @@
+* {
+    text-align: center;
+}
+
+.About {
+    background-image: url('https://images.unsplash.com/photo-1601430854328-26d0d524344a?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover; 
+    height: 700px;
+}
+
+h1 {
+    padding-top: 10px;
+}
+
+h2 {
+    margin: 20px 0 10px 0;
+    text-decoration: underline;
+}
+
+p {
+    margin: 0 100px 5px 100px;
+}
+

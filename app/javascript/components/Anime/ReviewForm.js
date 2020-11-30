@@ -53,7 +53,7 @@ const Field = styled.div`
         border: 1px solid #e6e6e6;
         margin: 0 0 12px 0;
         padding: 12px;
-        width: 95%;
+        width: 100%;
     }
 
     textarea {
@@ -65,16 +65,16 @@ const Field = styled.div`
         padding: 12px;
     }
 `
+
 const Wrapper = styled.div`
-    background: #fff;
+    background: #2F242C;
     padding: 20px;
-    background: #000;
     height: 100vh;
     padding-top: 12px; 
 `
 const SubmitBtn = styled.button`
     color: #fff;
-    background: green;
+    background: #6D466B;
     border-radius: 4px;
     padding: 12px;
     font-size: 18px; 
@@ -116,7 +116,7 @@ const ReviewForm = (props) => {
     return(
         <Wrapper>
             <form onSubmit={props.handleSubmit}>
-                <Headline>Have you watch {props.attributes.name}? Share your thought!</Headline>
+                <Headline>Have you watched {props.attributes.name}? Share your thought!</Headline>
                 <Field>
                     <input onChange={props.handleChange} value={props.review.title} type='text' name='title' placeholder='Review Title'/>
                 </Field>
@@ -131,7 +131,7 @@ const ReviewForm = (props) => {
                         </RatingBox>
                     </RatingContainer>
                 </Field>
-                <SubmitBtn type='submit'>Submit Your Review</SubmitBtn>
+                <SubmitBtn type='submit'>Give Your Two Cents</SubmitBtn>
             </form>
         </Wrapper>
     )

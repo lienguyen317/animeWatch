@@ -7,6 +7,7 @@ const Card = styled.div`
     border: 1px solid #efefef; 
     background: #fff;
     text-align: center;
+    opacity: 0.8;
 `
 const AnimeThumbNail =  styled.div`
     width: 50px;
@@ -31,7 +32,7 @@ const LinkWrapper = styled.div`
 
     a {
         color: #fff;
-        background: #000;
+        background: #6D466B;
         border-radius: 4px;
         padding: 10px 50px;
         border: 1px solid #000;

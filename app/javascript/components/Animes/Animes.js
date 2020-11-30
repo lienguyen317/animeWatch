@@ -1,4 +1,4 @@
-import React, {useState, useEffect, Fragment} from 'react'
+import React, {useState, useEffect} from 'react'
 // 
 import axios from 'axios'
 import Anime from './Anime'
@@ -10,12 +10,14 @@ const Home = styled.div`
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    background-image: url("https://images.unsplash.com/photo-1458682625221-3a45f8a844c7?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1267&q=80")
 `
 const Header = styled.div`
-    padding: 100px 100px 10px 100px;
+    padding: 10px 100px 10px 100px;
 
     h1 {
         font-size: 42px;
+        font-family: 'Permanent Marker', cursive;
     }
 `
 const Subheader = styled.div`
@@ -29,6 +31,7 @@ const Grid = styled.div`
     width: 100%;
     padding: 20px;
 `
+
 
 const Animes = () => {
     const [animes, setAnimes] = useState([])

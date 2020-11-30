@@ -3,10 +3,13 @@ import Rating from '../Rating/Rating'
 import styled from 'styled-components'
 
 const Card = styled.div`
-    border: 1px solid rgba(0,0,0,0.1);
+    border: 2px solid #2F242C;
     border-radius: 4px;
     padding: 20px;
     margin: 0 20px 20px 0;
+    background-color: grey;
+    opacity: 0.7;
+    font-weight: bold;
 `
 const RatingContainer = styled.div`
     display: flex;
