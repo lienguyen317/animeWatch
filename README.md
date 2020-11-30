@@ -94,4 +94,11 @@ ___
 | Responsive CSS | M | 3hr |  |
 | Total hours | | 12hr| |
 
+## Challenges
+___
+
++ It was challengng to get styled-component to be responsive. I've read several [documents](https://jsramblings.com/how-to-use-media-queries-with-styled-components/) and still no luck. I will look in to this in the the future. 
++ Deployment was also challenging since I use react webpacker. I tried to deploy on heroku and it didn't work. 
+
+
 
