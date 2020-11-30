@@ -11,8 +11,9 @@ As a anime fan, I often feel overwhelmed with the amount of animes out there. I 
 ## Tech & FrameWork 
 ___
 
-+ Ruby on rails with react webpacker
-+ React styled-component
++ [Ruby on rails with react webpacker](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-ruby-on-rails-project-with-a-react-frontend)
++ [React styled-component](https://styled-components.com/)
++ Fetch api using [Axios](https://www.digitalocean.com/community/tutorials/react-axios-react)
 + Font Awesome
 + Google font
 
