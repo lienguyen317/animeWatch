@@ -16,6 +16,7 @@ ___
 + Fetch api using [Axios](https://www.digitalocean.com/community/tutorials/react-axios-react)
 + Font Awesome
 + Google font
++ Use [Slug](https://medium.com/@hartaniyassir/creating-slug-urls-in-rails-without-gems-c693e0eeec8a) instead of :id
 
 
 
