@@ -61,21 +61,26 @@ ___
 
 | Component | Priority | Estimated Time | Actual Time |
 | --------- | -------- | -------------- | ----------- |
-| Ruby setup | H | .5hr |  |
-| Anime Model | H | .5hr |  |
-| Anime Controller | H | 1hr |  |
-| Review Model | H | .5hr |  |
-| Review Controller | H | 1hr |  |
-| Setup Webpacker-react | H | .5hr |  |
-| Animes Component | H| 4hr | |
-| Anime Card Component | H | 2hr | |
-| Individual anime page component | H | 3hr | |
-| Review component | H | 2hr | |
-| Review Form | H | 3hr | |
-| CSS | M | 4hr |  |
-| Font-Awsome Icon | M | 1hr |  |
-| Testing and bug fix | M | 5hr | | 
-| Total hours |  | 30hr | |
+| Ruby setup | H | .5hr | .5hr |
+| Anime Model | H | .5hr | .5hr |
+| Anime Controller | H | 1hr | 2hr |
+| Review Model | H | .5hr | .5hr |
+| Review Controller | H | 1hr | .5hr |
+| Setup Webpacker-react | H | .5hr | .5hr |
+| NavBar Component| H | 1hr | 1hr |
+| About Component | M | 1hr | 1hr |
+| Animes Component | H | 1hr | .5 hr|
+| Anime(Card) Component | H | 2hr | 3hr |
+| Rating Component | H | 2hr | 1.5hr |
+| Anime(page) Component| H | 3hr | 4hr |
+| Header Component | M | .5hr | .5hr |
+| Review Component | H | .5hr | 1hr |
+| ReviewForm Component| H | 3hr | 2.5hr |
+| Stars Rating for ReviewForm| H | 1hr | .5hr |
+| styling using styled-component | M | 5hr | 4hr |
+| Font-Awsome Icon | M | 1hr | 1.5hr |
+| Testing and bug fix | M | 5hr | 3.5hr | 
+| Total hours |  | 30hr | 29hr |
 
 ### PostMPV
 
@@ -85,6 +90,7 @@ ___
 | Animation | L | 3hr | |
 | 3rd model for backend | L | 2hr | |
 | Responsive CSS | M | 3hr |  |
+| Total hours | | 12hr| |
 
 
 
