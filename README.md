@@ -37,15 +37,16 @@ ___
 
 ### MVP
 
-+ Set up Ruby on rails with webpacker-react
++ Set up Ruby on rails with react-webpacker
 + Anime model & controller (backend)
 + Review model & controller (backend)
-+ Fetch api from the backend API 
++ Fetch api from the backend API using axios
 + Set up front-end components with react
-+ Index route implemented in React to show all
-+ Show Route implemented in REact to show individual anime
-+ Reviews compoments 
-+ CSS 
++ Index route implemented in React to show all animes
++ Show Route implemented in React to show individual anime
++ Review component
++ ReviewForm Component 
++ Style using style-component from react
 
 
 ### PostMVP
@@ -53,6 +54,7 @@ ___
 + Motion framers
 + Add animations
 + Add another model to the backend for anime info
++ Responsive Css
 
 ## Time Matrix  
 ___

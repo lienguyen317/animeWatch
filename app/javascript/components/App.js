@@ -4,6 +4,7 @@ import Animes from './Animes/Animes'
 import Anime from './Anime/Anime'
 import NavBar from './NavBar/NavBar'
 import About from './About/About.js'
+import Footer from './Footer/Footer.js'
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
                 <Route exact path = '/about' component = {About}/>
                 <Route exact path = '/animes/:slug' component = {Anime}/>
             </Switch>
+            <Footer />
         </div>
         
     )
