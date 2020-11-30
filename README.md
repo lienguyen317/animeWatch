@@ -14,7 +14,7 @@ ___
 + [Ruby on rails with react webpacker](https://www.digitalocean.com/community/tutorials/how-to-set-up-a-ruby-on-rails-project-with-a-react-frontend)
 + [React styled-component](https://styled-components.com/)
 + Fetch api using [Axios](https://www.digitalocean.com/community/tutorials/react-axios-react)
-+ Font Awesome
++ Font Awesome / Unicode
 + Google font
 + Use [Slug](https://medium.com/@hartaniyassir/creating-slug-urls-in-rails-without-gems-c693e0eeec8a) instead of :id
 
