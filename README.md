@@ -83,8 +83,8 @@ ___
 | Stars Rating for ReviewForm| H | 1hr | .5hr |
 | styling using styled-component | M | 5hr | 4hr |
 | Font-Awsome Icon | M | 1hr | 1.5hr |
-| Testing and bug fix | M | 5hr | 3.5hr | 
-| Total hours |  | 30hr | 29hr |
+| Testing and bug fix | M | 5hr | 6.5hr | 
+| Total hours |  | 30hr | 32hr |
 
 ### PostMPV
 
